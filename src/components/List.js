@@ -1,11 +1,18 @@
 import React from 'react';
 import ListItems from './ListItems';
 //code here
- const List = ({listx}) =>{
+ const List = ({names}) =>{
   return(
     
  
-    <ListItems valuex={i} />
+    <div>
+
+      {names.map((e) => (
+        <ListItems valuex={e} />
+      ))}
+
+      
+    </div>
     
   
   )
